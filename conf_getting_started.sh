@@ -23,7 +23,7 @@ obmenu
 # At this point, personalize the menu (or not), then close the window
 
 sudo apt-get install tint2 -y
-cd ~/.conf
+cd ~/.config
 rm -rvf tint2
 git clone https://github.com/RiceBowlJr/tint2.git
 
