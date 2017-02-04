@@ -33,3 +33,4 @@ git clone https://github.com/RiceBowlJr/openbox.git
 wget https://dl.opendesktop.org/api/files/download/id/1485941697/Mistral-Thin-Dark.obt
 
 # From there, add the new theme in obconf, the obt file is in the openbonx conf directory
+wget http://i1.wp.com/abekislevitz.com/wp/wp-content/uploads/2013/10/OwlSpotting3.jpg
