@@ -23,6 +23,11 @@ cp config/autostart/*.desktop ~/.config/autostart/
 cp config/redshift.conf ~/.config/
 cp .vimrc ~/
 
+## Numix Theme
+sudo apt-get install numix-gtk-theme numix-icon-theme
+echo "Now you need to apply the theme in 'gnome-tweak-tool', lets do it now!"
+gnome-tweak-tool
+
 # Installation and configuration of other softwares
 
 cd
@@ -49,8 +54,10 @@ sudo dpkg -i atom-amd64.deb
 ## KVM/Qemu
 cd
 sudo apt-get install qemu-kvm libvirt-clients libvirt-daemon virt-manager
+mkdir ~/cows
+echo "To edit storage pools and networks, you need to edit with 'virsh pool-edit mypool' or other utility using libvirt API."
 
-## Docker
+# Docker
 sudo apt-get install ca-certificates gnupg2
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable edge"
@@ -61,7 +68,7 @@ sudo docker run hello-world
 
 ## Misc utils
 cd
-sudo apt-get install openssh ssh-server rsync
+sudo apt-get install openssh ssh-server rsync vlc
 
 # From there, add the new theme in obconf, the obt file is in the openbonx conf directory
 wget http://i1.wp.com/abekislevitz.com/wp/wp-content/uploads/2013/10/OwlSpotting3.jpg
