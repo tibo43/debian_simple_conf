@@ -10,3 +10,17 @@ set cursorline
 set cursorcolumn
 :hi CursorLine cterm=NONE ctermbg=4 ctermfg=white guibg=darkred guifg=white
 :hi CursorColumn   cterm=NONE ctermbg=4 ctermfg=white guibg=darkred guifg=white
+
+" Case insensitive search
+set ic
+
+" Colorscheme desert
+colorscheme desert
+
+" Set encoding
+set encoding=utf-8
+set fileencoding=utf-8
+
+" Activate indenting for files and Set auto indenting
+filetype indent on
+set ai
