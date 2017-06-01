@@ -11,6 +11,7 @@ check() {
   fi
 }
 
+git config --global user.email "fabre.thibaut@gmail.com"
 for item in $LIST; do
   echo "\n[INFO] Installation de $item ..."
   sudo apt-get install -y $item 1> /dev/null

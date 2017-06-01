@@ -20,8 +20,7 @@ check() {
 
 echo "\n[INFO] Installation de Atom..."
 wget -O /tmp/atom-amd64.deb https://atom.io/download/deb \
-&& sudo dpkg --install /tmp/atom-amd64.deb \
-&& sudo apt-get -f install 1> /dev/null
+&& sudo dpkg --install /tmp/atom-amd64.deb
 check
 
 exit 0
