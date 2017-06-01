@@ -30,6 +30,12 @@ for script in ./scripts/*.sh;	do
 		sleep 1;
 done
 
+echo "remove gnome-games"
+sudo apt-get remove gnome-games \
+	&& sudo apt-get install gnome-core \
+		&& sudo apt-get autoremove \
+			&& sudo apt-get autoclean
+
 echo "Reboot in 5s"
 sleep 5
 sudo init 6
