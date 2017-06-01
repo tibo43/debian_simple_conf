@@ -14,7 +14,7 @@ check() {
 
 
 echo "\n[INFO] Installation de Cryptomator..."
-wget -O 'cryptomator-1.2.3-amd64.deb' 'https://bintray.com/cryptomator/cryptomator-deb/download_file?file_path=cryptomator-1.2.3-amd64.deb' -P /tmp \
+wget -O /tmp/cryptomator-1.2.3-amd64.deb https://bintray.com/cryptomator/cryptomator-deb/download_file?file_path=cryptomator-1.2.3-amd64.deb \
 && sudo dpkg --install /tmp/cryptomator-1.2.3-amd64.deb
 check
 
