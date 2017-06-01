@@ -32,6 +32,6 @@ done
 
 echo "Reboot in 5s"
 sleep 5
-sudo init 6
+#sudo init 6
 
 exit 0
