@@ -27,4 +27,8 @@ for script in ./scripts/*.sh;	do
 		sleep 1;
 done
 
+echo "Reboot in 5s"
+sleep 5
+sudo init 6
+
 exit 0
