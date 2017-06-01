@@ -10,6 +10,9 @@ then
   exit 1
 fi
 
+sudo usermod -a -G root $USER 1> /dev/null
+sudo usermod -a -G sudo $USER 1> /dev/null
+
 sudo apt-get update
 sudo apt-get upgrade -y
 

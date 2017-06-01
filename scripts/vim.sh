@@ -5,7 +5,7 @@ check() {
     if [ $? = 0 ] ; then
       echo "\nInstallation OK."
       update-alternatives --set editor /usr/bin/vim.basic
-      rsync ./config/.vimrc ~/
+      rsync config/.vimrc ~/
     else
       echo "\nErreur lors de l'installation."
     fi
