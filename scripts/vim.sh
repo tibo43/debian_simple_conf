@@ -6,6 +6,7 @@ check() {
       echo "\nInstallation OK."
       sudo update-alternatives --set editor /usr/bin/vim.basic
       rsync $PWD/config/.vimrc ~/
+      sudo ln -s ~/.vimrc /root/.vimrc
     else
       echo "\nErreur lors de l'installation."
     fi
