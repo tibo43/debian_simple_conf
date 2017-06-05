@@ -31,10 +31,9 @@ for script in ./scripts/*.sh;	do
 done
 
 echo "remove gnome-games"
-sudo apt-get remove gnome-games \
-	&& sudo apt-get install gnome-core \
-		&& sudo apt-get autoremove \
-			&& sudo apt-get autoclean
+sudo apt-get remove gnome-games -y \
+	&& sudo apt-get install gnome-core -y \
+		&& sudo apt-get autoremove  -y
 
 echo "Reboot in 5s"
 sleep 5
