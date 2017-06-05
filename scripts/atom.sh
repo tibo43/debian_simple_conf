@@ -3,22 +3,26 @@
 # Fonction pour vérifier l'état de la commande précédente
 check() {
   if [ $? = 0 ] ; then
-    echo "\nInstallation OK."
+    echo "\nSetup OK."
     if [ -f /tmp/atom-amd64.deb ] ; then
       rm -f /tmp/atom-amd64.deb
     fi
-    echo "\n  - Installation de Asciidoctor preview..."
+    echo "\n  - Setup AsciiDoctor preview..."
     apm install asciidoc-preview
-    echo "\n  - Installation de la coloration syntaxique Asciidoc..."
+    echo "\n  - Setup AsciiDoc syntax colour..."
     apm install language-asciidoc
-    echo "\n - Installation du plugin pour le statut de son repository git..."
+    echo "\n - Setup Git repository status..."
     apm install tree-view-git-status
+    echo "\n - Setup file icon..."
+    apm install file-icons
+    echo "\n  - Setup Dockerfile syntax colour..."
+    apm install language-docker
   else
-      echo "\nErreur lors de l'installation."
+      echo "\nError while setup."
   fi
 }
 
-echo "\n[INFO] Installation de Atom..."
+echo "\n[INFO] Atom setup..."
 wget -O /tmp/atom-amd64.deb https://atom.io/download/deb \
 && sudo dpkg --install /tmp/atom-amd64.deb
 check
