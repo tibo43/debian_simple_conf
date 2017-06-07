@@ -12,6 +12,7 @@ check() {
       sudo ln -s /home/tfabre/.oh-my-zsh /root/.oh-my-zsh
       sudo ln -s ~/.zshrc /root/.zshrc
       sudo chsh -s `which zsh`
+      rm -f install.sh
     else
       echo "\nErreur lors de l'installation."
     fi
