@@ -1,6 +1,6 @@
 #!/bin/sh
 
-LIST='build-essential software-properties-common zip bzip2 wget curl ldap-utils dnsutils apt-transport-https htop iotop gnupg2 ca-certificates rsync gconf2 gconf-service python-pip'
+LIST='build-essential software-properties-common zip bzip2 wget curl ldap-utils dnsutils apt-transport-https htop iotop gnupg2 ca-certificates rsync gconf2 gconf-service python-pip iperf whois'
 
 # Fonction pour vérifier l'état de la commande précédente
 check() {
