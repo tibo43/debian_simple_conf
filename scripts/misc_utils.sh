@@ -17,4 +17,7 @@ for item in $LIST; do
   check
 done
 
+echo "\n[INFO] Installation du plugin flash pour Firefox..."
+sudo cp -r config/flash/usr/* /usr && sudo cp config/flash/libflashplayer.so /usr/lib/mozilla/plugins && sudo chown root:root /usr/lib/mozilla/plugins/libflashplayer.so
+
 exit 0
