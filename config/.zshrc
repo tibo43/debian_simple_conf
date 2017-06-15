@@ -83,3 +83,11 @@ export SSH_KEY_PATH="~/.ssh/tfab"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+function asciidoctor() {
+TYPE=pdf
+STYLE=default
+	if [ -n "$1" ] ; then
+		docker run -it -v $PWD:/src -e DEFAULT_GEN=$TYPE -e DEFAULT_FILE=$1 -e DEFAULT_STYLE=$STYLE tibo43/asciidoctor	
+    	fi
+}
+
