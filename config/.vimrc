@@ -22,3 +22,6 @@ set fileencoding=utf-8
 " Activate indenting for files and Set auto indenting
 filetype indent on
 set ai
+
+" Activate or not the paste with indent
+set pastetoggle=<F3>
