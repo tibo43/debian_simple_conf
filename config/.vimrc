@@ -1,5 +1,5 @@
 " Print line number
-set nu
+set invnumber=<F9>
 syntax enable
 
 " Always show last statusline
