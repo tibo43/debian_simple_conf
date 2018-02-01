@@ -90,4 +90,4 @@ STYLE=default
 		docker run -it -v $PWD:/src -e DEFAULT_GEN=$TYPE -e DEFAULT_FILE=$1 -e DEFAULT_STYLE=$STYLE tibo43/asciidoctor	
     	fi
 }
-
+alias python=`which python3`
