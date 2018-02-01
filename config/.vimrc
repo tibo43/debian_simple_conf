@@ -1,5 +1,5 @@
 " Print line number
-set invnumber=<F9>
+map <F9> :set invnumber<CR>
 syntax enable
 
 " Always show last statusline
